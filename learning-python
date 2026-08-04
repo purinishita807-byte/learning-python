@@ -5,7 +5,7 @@
     "colab": {
       "provenance": [],
       "mount_file_id": "13ZJSsLfxT3S-Hb6nuFMY1vS3BSL8tvhg",
-      "authorship_tag": "ABX9TyNhC08aEeHAkZPhMbTcwTSu",
+      "authorship_tag": "ABX9TyNYjq5VNjm44dUv8qjcnEn9",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -29,13 +29,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 31,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "1eRBBuT17NDN",
-        "outputId": "83221011-4021-4c6b-8582-89c25b807908"
+        "outputId": "87ef4ad4-63eb-46bb-d5f8-090f47b1b6fb"
       },
       "outputs": [
         {
@@ -48,6 +48,164 @@
       ],
       "source": [
         "print(\"Hello world\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Creating variables and assigning values."
+      ],
+      "metadata": {
+        "id": "nHy3XrRjQ1Cn"
+      },
+      "execution_count": 32,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student_name = \"Nishita puri\" # This is a String(str)."
+      ],
+      "metadata": {
+        "id": "ZOD3pI7_PEqP"
+      },
+      "execution_count": 33,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student_age = 18 # This is an Integer(int)."
+      ],
+      "metadata": {
+        "id": "gGaPJ8i-PM_P"
+      },
+      "execution_count": 34,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "target_gpa = 9.5 # Thjs is a Float(float)."
+      ],
+      "metadata": {
+        "id": "9B1TXRNDPSff"
+      },
+      "execution_count": 35,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "is_learning_python = True # This is a Boolean(bool)."
+      ],
+      "metadata": {
+        "id": "vZc6tVq3PXD9"
+      },
+      "execution_count": 36,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Displaying the values on the screen using the print() function."
+      ],
+      "metadata": {
+        "id": "_sfvDXRyRM2j"
+      },
+      "execution_count": 37,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(student_name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "q6lVtyJKQToh",
+        "outputId": "57d5687b-87e7-4532-e9cd-dbd6768b4465"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nishita puri\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(student_age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w5vZT2KJQa0Z",
+        "outputId": "4fb18522-91e5-47d1-f95f-38a68d8bd71d"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "18\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(target_gpa)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-CX5xVRWQeUJ",
+        "outputId": "ab56bab7-0cbc-400e-cb24-8d0218600ebb"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(is_learning_python)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gdvGBSVpQmdS",
+        "outputId": "39315d30-266b-4d74-d72a-756f049dfc8e"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
       ]
     }
   ]
