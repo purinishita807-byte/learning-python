@@ -1,0 +1,86 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "mount_file_id": "13ZJSsLfxT3S-Hb6nuFMY1vS3BSL8tvhg",
+      "authorship_tag": "ABX9TyOgu0Confc/vZ2EauQ3FdWT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/purinishita807-byte/learning-python/blob/main/Deinococcus-Genomics-Analyzer\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "class DNARepairAnalyzer:\n",
+        "    def __init__(self, sequence_name, sequence):\n",
+        "        self.name = sequence_name\n",
+        "        self.sequence = sequence.upper()\n",
+        "\n",
+        "    def calculate_gc_content(self):\n",
+        "        g_count = self.sequence.count('G')\n",
+        "        c_count = self.sequence.count('C')\n",
+        "        total_length = len(self.sequence)\n",
+        "        gc_percentage = ((g_count + c_count) / total_length) * 100\n",
+        "        return round(gc_percentage, 2)\n",
+        "\n",
+        "    def find_mutation_hotspots(self):\n",
+        "        dna_array = np.array(list(self.sequence))\n",
+        "        t_indices = np.where(dna_array == 'T')[0] # [0] to get just the indices array\n",
+        "        return t_indices.tolist()\n",
+        "\n",
+        "if __name__ == \"__main__\":\n",
+        "    print(f\"--- Analyzing Deinococcus radiodurans DNA ---\")\n",
+        "\n",
+        "    sample_dna = \"ATGGCAAAAGACGACAACAAGAAGAAAGCCCTCGAAACCGCCATCAAGCAGGCCCTTCGTCGCAAGGGCGGCGTGATCGACCTGGAGAACGGCAAGGTCGTCGTCGACGCCGTCGGCAAGGGCGCCACCGTCACCCAGCTCCTCGGCGGCGACGCCAAGCTCACCCGCGCCGAGTTCGAGGTCCTCGGCCGCAAGCTCGGCATC\"\n",
+        "\n",
+        "    analyzer = DNARepairAnalyzer(\"RecA Gene Segment\", sample_dna)\n",
+        "\n",
+        "    gc_result = analyzer.calculate_gc_content()\n",
+        "    print(f\"GC Content of {analyzer.name}: {gc_result}%\")\n",
+        "\n",
+        "    t_spots = analyzer.find_mutation_hotspots()\n",
+        "    print(f\"Thymine (T) positions (Radiation Target Sites): {t_spots}\")"
+      ],
+      "metadata": {
+        "id": "TdRPCJme9Gdm",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f22b8478-546f-4209-e3bf-d8966bb9ae55"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--- Analyzing Deinococcus radiodurans DNA ---\n",
+            "GC Content of RecA Gene Segment: 65.69%\n",
+            "Thymine (T) positions (Radiation Target Sites): [1, 31, 43, 55, 56, 59, 73, 76, 82, 97, 100, 103, 112, 130, 139, 142, 160, 174, 175, 181, 184, 196, 202]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
