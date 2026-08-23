@@ -4,7 +4,7 @@ Welcome! This repository documents my daily journey of mastering Python, data an
 
 ## 🚀 Progress & Milestones
 - [x] Python Basics (Syntax, Loops, Functions, and Data Structures) via **Kaggle**
-- [ ] Data Manipulation & Analysis (`NumPy`, `Pandas`)
+- [X] Data Manipulation & Analysis (`NumPy`, `Pandas`)
 - [ ] Data Visualization (`Matplotlib`, `Seaborn`)
 
 ## 📂 Current Roadmap
