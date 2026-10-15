@@ -6,7 +6,7 @@ Welcome! This repository documents my daily journey of mastering Python, data an
 - [x] Python Basics (Syntax, Loops, Functions, and Data Structures) via **Kaggle**
 - [X] Data Manipulation & Analysis (`NumPy`, `Pandas`)
 - [ ] Data Visualization (`Matplotlib`, `Seaborn`)
-
+- [ ] Bioinformatics (`BioPython`)
 ## 📂 Current Roadmap
 1. Completing micro-courses and practical code challenges.
 2. Building mini-projects analyzing cancer or genetic datasets.
